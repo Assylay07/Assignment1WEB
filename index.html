@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Webpage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #9dbedb;
+      color: #333;
+      display: flex;
+    }
+
+    header {
+      width: 220px;
+      background: #1F375D;
+      height: 100vh; 
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #a8d5ed;
+    }
+
+    main {
+      margin-left: 240px;
+      padding: 20px;
+      flex: 1;
+    }
+
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 20px;
+    }
+
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%; 
+      object-fit: cover;
+      box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    }
+
+    .profile-text h1 {
+      font-size: 2.2em;
+      margin: 0;
+      color: #1F375D;
+    }
+
+    .profile-text h2 {
+      font-size: 1.5em;
+      margin: 5px 0;
+      color: #2e4f85;
+      font-weight: normal;
+    }
+
+    .profile-text h3 {
+      font-size: 1.1em;
+      font-style: bold;
+      color: #444;
+      margin: 5px 0;
+    }
+
+   
+    .section {
+      display: none;
+      margin-top: 15px;
+    }
+
+    
+    .section:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#websites">Favorite Websites</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="home">
+    
+      <div class="profile">
+        <img src="images/photo_2025-09-16_01-32-50.jpg" alt="My photo">
+        <div class="profile-text">
+          <h1>Assylay Shukirbay</h1>
+          <h2>SE 2406</h2>
+          <h3>I am a second year undergraduate student in "Software Engineering".</h3>
+        </div>
+      </div>
+
+      
+      <div id="about" class="section">
+        <p> <b>I’m from Taraz and now studying Software Engineering.&#128522;.<br>
+        I wouldn’t say I’m deeply into IT, but I’m learning step by step and trying to find what interests me most &#128512.<br>
+        I’m a curious and open person, I like simple things, and I enjoy coming up with ideas outside of studies too &#128521.</b></p>
+      </div>
+
+      <div id="hobbies" class="section">
+        <h3>My Hobbies</h3>
+        <ol>
+          <li>Reading books</li>
+          <li>Watching movies/series</li>
+          <li>Walking or cycling</li>
+          <li>Exploring new places</li>
+          <li>Meeting friends</li>
+        </ol>
+      </div>
+
+      <div id="websites" class="section">
+        <h3>Favorite Websites</h3>
+        <ul>
+          <li><a href="https://www.youtube.com">YouTube</a></li>
+          <li><a href="https://www.instagram.com">Instagram</a></li>
+          <li><a href="https://www.pinterest.com">Pinterest</a></li>
+        </ul>
+      </div>
+
+      <div id="schedule" class="section">
+        <h3>My Weekly Schedule</h3>
+        <table border = "1">
+    <tr>
+        <td><b>Subject</b></td>
+        <td><b>Day</b></td>
+        <td><b>Time</b></td>
+    </tr>
+    <tr>
+        <td>Design and Analysis of Algorithms</td>
+        <td>Monday</td>
+        <td>14:00 - 15:50</td>
+    </tr>
+    <tr>
+        <td>Russian Language 1<br>
+        Software Design Patterns<br>
+    Design and Analysis of Algorithms</td>
+        <td>Tuesday</td>
+        <td>14:00 - 15:50<br>
+        16:00 - 17:50<br>
+    18:00 - 19:50</td>
+    </tr>
+    <tr>
+        <td>Operating Systems<br>
+        Software Design Patterns<br>
+    WEB Techologies 1(Front End)</td>
+        <td>Wednesday</td>
+        <td>10:00 - 11:50<br>
+        16:00 - 16:50<br>
+    18:00 - 19:50</td>
+    </tr>
+    <tr> 
+        <td>Operating Systems<br>
+    WEB Techologies 1(Front End)<br>
+    Software Design Patterns<br>
+    Design and Analysis of Algorithms</td>
+        <td>Friday</td>
+        <td>09:00 - 09:50<br>
+        13:05 - 13:55<br>
+    14:00 - 15:50<br>
+16:00 - 16:50</td>
+    </tr>
+</table><br><br><br>
+      </div>
+
+      <div id="contact" class="section">
+        <h3>Contact Me</h3>
+        <form>
+          <label>Name:</label>
+          <input type="text"><br><br>
+          <label>Email:</label>
+          <input type="email"><br><br>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
